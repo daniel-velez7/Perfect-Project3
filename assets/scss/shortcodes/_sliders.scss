@@ -1,0 +1,198 @@
+
+
+/* ====================== [ Start Slider ] ====================== */
+
+.slider{
+    position: relative;
+    height: 100vh;
+    position: relative;
+
+    .item-img{
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+
+        .bord{
+        
+            &:after{
+                content: '';
+                position: absolute;
+                top: 0px;
+                right: 80px;
+                left: 80px;
+                bottom: 0px;
+                border-left: 1px solid rgba(255,255,255,.05);
+                border-right: 1px solid rgba(255,255,255,.05);
+                z-index: 3;
+            }
+    
+            &:before{
+                content: '';
+                position: absolute;
+                top: 100px;
+                right: 0px;
+                left: 0px;
+                bottom: 80px;
+                border-top: 1px solid rgba(255,255,255,.05);
+                border-bottom: 1px solid rgba(255,255,255,.05);
+                z-index: 3;
+            }
+        }
+    }
+
+    &.mdrn-slid,
+    &.clasc-slid{
+
+        .caption{
+
+            &.bold{
+    
+                h4{
+                    font-size: 60px;
+                    color: $main-color;
+                }
+    
+                h1{
+                    font-size: 65px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                }
+
+                h6{
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    letter-spacing: 15px;
+                }
+            }
+        }
+    }
+
+    .btm-curv{
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        z-index: 888;
+    }
+
+    &.ctrl-one{
+
+        .swiper-nav-ctrl{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            font-size: 25px;
+            color: #fff;
+
+            &:hover{
+
+                &:after{
+                    transform: rotate(360deg);
+                    transition: all 5s linear;
+                }
+            }
+
+            &:after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: 50%;
+                border: 1px dashed $main-color;
+                background: none;
+            }
+
+            &:before{
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                right: 5px;
+                bottom: 5px;
+                background: rgba(255,255,255,.05);
+                border-radius: 50%;
+            }
+        }
+
+        .swiper-pagination-bullets{
+            bottom: 30px;
+        }
+
+        .swiper-pagination-bullet{
+            width: 5px;
+            height: 5px;
+            background: $main-color;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 15px;
+            position: relative;
+            opacity: 1;
+
+            &:after{
+                content: '';
+                width: 17px;
+                height: 17px;
+                border: 1px solid $main-color;
+                border-radius: 50%;
+                position: absolute;
+                top: -6px;
+                left: -6px;
+                opacity: 0;
+            }
+        }
+
+        .swiper-pagination-bullet-active{
+            
+            &:after{
+                opacity: 1;
+            }
+        }
+    }
+
+    &.pages{
+        height: 75vh;
+
+        h1{
+            font-size: 120px;
+            font-style: italic;
+        }
+    }
+}
+
+.shape-top{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+
+    img{
+        display: block;
+        width: calc(100% + 1.3px);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.shape-bottom{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+
+    img{
+        display: block;
+        width: calc(100% + 1.3px);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%) rotate(180deg);
+    }
+}
+
+/* ====================== [ End Slider ] ====================== */

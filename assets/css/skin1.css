@@ -1,0 +1,28 @@
+
+.clorful,
+.sec-head h6,
+.slider.mdrn-slid .caption.bold h4,
+.slider.clasc-slid .caption.bold h4,
+.menu .tab-icons .ui-tabs-active,
+.testimonials .item .info .author-name,
+.staff .item .info h6,
+.staff .item .info .social a,
+.blog .item .cont .more a,
+.main-footer .item .ftitle h6,
+.main-footer .social a{
+    color: #b7b095;
+}
+
+.btn-skew i:after,
+.navbar .navbar-nav .butn,
+.insta .img:after{
+    background: #b7b095;
+}
+
+.btn-skew i:before,
+.staff .item .img:after,
+.staff .item .img:before,
+.staff .item .info:after,
+.staff .item .info:before{
+    border-color: #b7b095;
+}

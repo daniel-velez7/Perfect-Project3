@@ -1,0 +1,167 @@
+/* ====================== [  Start Button Style ] ====================== */
+.btn-curve {
+  background: transparent;
+  padding: 12px 35px;
+  border: 1px solid #1e1e1e;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: none;
+}
+
+.btn-curve img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-curve:focus {
+  outline: none;
+}
+
+.btn-curve:hover {
+  outline: none;
+}
+
+.btn-curve:hover:after {
+  bottom: -30px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.btn-curve:hover span {
+  color: #fff;
+}
+
+.btn-curve:after {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  right: -30px;
+  bottom: 130%;
+  background: #1e1e1e;
+  -webkit-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  -webkit-transition: all .8s;
+  -o-transition: all .8s;
+  transition: all .8s;
+}
+
+.btn-curve span {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 2;
+  -webkit-transition: all .8s;
+  -o-transition: all .8s;
+  transition: all .8s;
+}
+
+.btn-curve.btn-lit {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-curve.btn-lit:hover span {
+  color: red;
+}
+
+.btn-curve.btn-lit:after {
+  background: #fff;
+}
+
+.btn-curve.btn-blc {
+  background: #1e1e1e;
+}
+
+.btn-curve.btn-blc:after {
+  background: #fff;
+}
+
+.btn-curve.btn-blc span {
+  color: #fff;
+}
+
+.btn-curve.btn-blc:hover span {
+  color: #1e1e1e;
+}
+
+.btn-curve.btn-color {
+  background: red;
+  border-color: red;
+}
+
+.btn-curve.btn-color:after {
+  background: #fff;
+}
+
+.btn-curve.btn-color span {
+  color: #0c0f16;
+}
+
+.btn-curve.btn-color:hover span {
+  color: red;
+}
+
+.btn-curve.btn-lg {
+  padding: 14px 40px;
+}
+
+.btn-curve.btn-lg span {
+  font-size: 14px;
+}
+
+.btn-curve.btn-wit {
+  background: #fff;
+  border-color: #fff;
+}
+
+.btn-curve.btn-wit:after {
+  background: #090909;
+}
+
+.btn-curve.btn-wit span {
+  color: #1e1e1e;
+}
+
+.btn-curve.btn-wit:hover span {
+  color: #fff;
+}
+
+.btn-curve.btn-radius {
+  border-radius: 30px;
+}
+
+.simple-btn {
+  position: relative;
+  padding: 7px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.simple-btn:after {
+  content: '';
+  width: 45%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.simple-btn.right:after {
+  left: auto;
+  right: 0;
+}
+
+/* ====================== [ End Button Style ] ====================== */

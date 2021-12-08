@@ -1,0 +1,33 @@
+
+
+/* ====================== [ Start Work ] ====================== */
+
+.portfolio{
+
+	.items{
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+
+		&.width2{
+			width: 25%;
+        }
+        
+        .item-img{
+            overflow: hidden;
+
+            &:hover{
+
+                img{
+                    transform: scale(1.1);
+                }
+            }
+
+            img{
+                transition: all .4s;
+            }
+        }
+	}
+}
+
+/* ====================== [ End Work ] ====================== */

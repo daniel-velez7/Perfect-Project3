@@ -1,0 +1,106 @@
+
+
+/* ====================== [ Start Team ] ====================== */
+
+.staff{
+
+    .item{
+        position: relative;
+
+        &:hover{
+
+            .info{
+                transform: rotateY(0deg);
+                opacity: 1;
+            }
+
+            .img{
+                opacity: 0;
+            }
+        }
+
+        .img{
+            position: relative;
+            transition: all .5s;
+    
+            &:after, &:before{
+                content: '';
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+                border: 1px solid $main-color;
+                opacity: .7;
+                z-index: 3;
+            }
+    
+            &:before{
+                top: 25px;
+                left: 15px;
+                right: 15px;
+                bottom: 25px;
+            }
+        }
+
+        .info{
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            background: #1a1c1b;
+            color: #fff;
+            text-align: center;
+            opacity: 0;
+            transform: rotateY(90deg);
+            transition: all .5s;
+
+            &:after, &:before{
+                content: '';
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+                border: 1px solid $main-color;
+                opacity: .4;
+                z-index: 3;
+            }
+    
+            &:before{
+                top: 25px;
+                left: 15px;
+                right: 15px;
+                bottom: 25px;
+            }
+
+            h5{
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+
+            h6{
+                font-size: 20px;
+                font-family: 'Pinyon Script', cursive !important;
+                color: $main-color;
+                margin-bottom: 5px;
+            }
+
+            .social{
+
+                a{
+                    color: $main-color;
+                    font-size: 11px;
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    border: 1px solid rgba(255,255,255,.2);
+                    background: rgba(255,255,255,.03);
+                }
+            }
+        }
+    }
+}
+
+/* ====================== [ End Team ] ====================== */

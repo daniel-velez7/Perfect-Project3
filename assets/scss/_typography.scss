@@ -1,0 +1,135 @@
+
+/* ====================== [ Start Typography  ] ====================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+}
+
+body {
+  color: #343332;
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-x: hidden !important;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Barlow', sans-serif;
+
+  &.dark{
+    background: #121217;
+    color: #fff;
+    
+    p {
+      color: #babbbb;
+    }
+
+    h1, h2, h3, h4 {
+      margin: 0;
+      line-height: 1.4;
+      font-weight: 500;
+      font-family: "Catamaran",sans-serif;
+    }
+
+    .bg-gray{
+      background: #18181d;
+    }
+
+    .blog .item .cont  .info span{
+      background: #18181d;
+    }
+
+    #ui-datepicker-div{
+      background: #18181d;
+    }
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+span, a, a:hover {
+  display: inline-block;
+  color: inherit;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 25px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 500;
+  font-family: 'Cormorant', serif;
+}
+
+p {
+  color: $pcolor;
+  font-size: 17px;
+  line-height: 2;
+  margin: 0;
+}
+
+a, span{
+  display: inline-block;
+  
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.container{
+  max-width: 1200px;
+
+  &.wide{
+    max-width: 1300px;
+  }
+}
+
+.custom-font{
+  font-family: 'Pinyon Script', cursive !important;
+}
+
+.scfont{
+  font-family: 'Amatic SC', cursive !important;
+}
+
+.playfont{
+  font-family: 'Cormorant', serif;
+}
+
+.bg-blc{
+  background: #16191e;
+  color: #fff;
+
+  p{
+    color: #ccc;
+  }
+}
+
+/* ====================== [ End Typography  ] ====================== */

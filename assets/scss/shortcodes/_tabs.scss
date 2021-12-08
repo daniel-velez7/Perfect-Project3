@@ -1,0 +1,218 @@
+
+/* ====================== [ Start tabs & list ] ====================== */
+
+.menu{
+    position: relative;
+
+    .back{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .tab-icons{
+
+        li{
+            width: 100%;
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 24px;
+            letter-spacing: 2px;
+            
+            a{
+                position: relative;
+                font-family: 'Cormorant', serif;
+
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 15px solid #fff;
+                    bottom: -31px;
+                    left: calc(50% - 10px);
+                    opacity: 0;
+                    display: none;
+                }
+
+                span{
+                    font-size: 14px;
+                    color: $main-color;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .ui-tabs-active{
+            color: $main-color;
+
+            a{
+
+                &:after{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    
+    .list{
+
+        .box{
+            
+            .combo{
+                display: flex;
+                padding-right: 30px;
+            }
+
+            .img{
+                width: 80px;
+                position: relative;
+                z-index: 2;
+
+                &:after{
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    left: -2px;
+                    right: -2px;
+                    bottom: -2px;
+                    background: rgba(255,255,255,.1);
+                    border-radius: 50%;
+                    z-index: -1;
+                }
+            }
+    
+            .text{
+                padding-left: 30px;
+                width: 100%;
+
+                h6{
+                    font-size: 16px;
+                    font-weight: 500;
+                    white-space: nowrap;
+                    padding-right: 20px;
+                }
+            }
+
+            .flex{
+
+                h6,
+                .dot-line,
+                .price{
+                    display: table-cell;
+                }
+            }
+        }
+
+        p{
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        .price{
+            padding-left: 20px;
+            white-space: nowrap;
+
+            h4{
+                font-size: 22px;
+                color: $main-color;
+            }
+
+            span{
+                font-size: 20px;
+                color: $main-color;
+            }
+        }
+
+        .dot-line{
+            width: 100%;
+
+            .dots{
+                height: 4px;
+                width: 100%;
+                border-bottom: 1px dashed rgba(255,255,255,.3);
+            }
+        }
+    }
+
+    &.menu-book{
+
+        .tab-icons{
+            display: flex;
+            margin-bottom: 50px;
+        }
+
+        .box-bord{
+            padding: 80px 40px;
+            position: relative;
+
+            &:after, &:before{
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                border: 1px solid rgba(255,255,255,.1);
+                z-index: 3;
+            }
+    
+            &:before{
+                top: 5px;
+                left: -5px;
+                right: -5px;
+                bottom: 5px;
+            }
+
+            .lins{
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-100px);
+
+                span{
+                    width: 70px;
+                    height: 35px;
+                    border-top-left-radius: 260px;
+                    border-top-right-radius: 260px;
+                    border: 1px solid rgba(255,255,255,.1);
+                    border-bottom: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    &:nth-of-type(2){
+                        top: 50px;
+                    }
+
+                    &:nth-of-type(3){
+                        top: 100px;
+                    }
+
+                    &:after,
+                    &:before{
+                        content: '';
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        border: 1px solid rgba(255,255,255,.1);
+                        position: absolute;
+                        bottom: -5px;
+                        right: -5px;
+                    }
+
+                    &:before{
+                        right: auto;
+                        left: -5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ====================== [ Start tabs & list ] ====================== */

@@ -1,0 +1,48 @@
+/* ====================== [ Start Slider ] ====================== */
+.slider {
+  position: relative;
+}
+
+.slider.slid-scrn {
+  height: 100vh;
+  position: relative;
+}
+
+.slider.slid-scrn .item-img {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+.slider .caption.bold h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.slider .shape-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  z-index: 888;
+}
+
+.slider .shape-bottom svg {
+  height: 30px;
+  display: block;
+  width: calc(100% + 1.3px);
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.slider .shape-bottom svg .light-shape-fill {
+  fill: #fff;
+}
+
+/* ====================== [ End Slider ] ====================== */

@@ -1,0 +1,392 @@
+
+
+/* ====================== [ Start navbar ] ====================== */
+
+.navbar{
+	position: absolute;
+	left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+	width: 100%;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+	z-index: 999;
+	min-height: 80px;
+
+	&.bg-lit{
+
+		&.nav-scroll{
+			background: #fff;
+			border-color: #eee;
+
+			.container{
+				margin-top: -10px;
+
+				.shape-bottom{
+					display: none;
+				}
+			}
+		}
+
+		.container{
+			background-color: #fff;
+			padding-left: 30px;
+			margin-top: 30px;
+			transition: all .4s;
+			position: relative;
+
+			.shape-bottom{
+				transform: rotatex(180deg) translateY(-100%);
+				bottom: 2px;
+				overflow: hidden;
+				transition: all .4s;
+			}
+		}
+
+		.navbar-nav{
+  
+			.nav-link{
+				color: #000;
+			}
+		}
+
+		.search{
+			color: #000;
+		}
+
+		.dropdown-menu{
+			background: #fff;
+			
+			.dropdown-item{
+				color: #000 !important;
+			}
+		}
+
+		.icon-bar{
+			color: #333;
+		}
+	}
+
+	&.bg-blc{
+
+		.cart .cart-side{
+			background: #18181d;
+		}
+	}
+
+	.icon-bar{
+		color: #fff;
+	}
+
+	.navbar-nav{
+
+		.butn{
+			background: $main-color;
+		}
+  
+		.nav-link{
+			font-size: 12px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+            font-weight: 600;
+			color: #fff;
+            padding: 15px 7px;
+            margin: 10px 15px;
+		}
+
+		.dropdown-menu{
+			padding: 10px 0;
+			border: 0;
+		}
+
+		.dropdown-item{
+			font-size: 13px;
+			padding: 10px 20px;
+			opacity: .9;
+
+			&:hover{
+				background: transparent;
+				color: $main-color;
+			}
+        }
+    }
+
+    .dropdown-menu{
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        border-radius: 0;
+        color: #fff;
+        background: #1a1e25;
+        min-width: 185px;
+        transform: translateY(20px);
+        transition: all .4s;
+    
+        &.show{
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    
+        .dropdown-item{
+			color: #fff;
+			font-size: 14px;
+            transition: all .4s;
+            padding: 10px 25px;
+            position: relative;
+    
+            &:after{
+                content: '';
+                width: 0px;
+                height: 1px;
+                background: $main-color;
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                transition: all .4s;
+            }
+    
+            &:hover{
+                padding-left: 30px;
+                
+                &:after{
+                    width: 10px;
+                }
+            }
+        }
+	}
+	
+	.cart{
+		padding: 20px 15px;
+		position: relative;
+
+		&:after{
+			content: '';
+			width: 1px;
+			height: 20px;
+			background: #ccc;
+			position: absolute;
+			right: 0;
+			top: calc(50% - 10px);
+		}
+
+		&:before{
+			content: '';
+			width: 1px;
+			height: 20px;
+			background: #ccc;
+			position: absolute;
+			left: 0;
+			top: calc(50% - 10px);
+		}
+
+		.cart-icon{
+			position: relative;
+			display: inline-block;
+
+			.mad-count{
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				background: $main-color;
+				font-size: 10px;
+				text-align: center;
+				line-height: 15px;
+				position: absolute;
+				top: -5px;
+				right: -5px;
+			}
+		}
+        
+        .icon{
+			font-size: 16px;
+            cursor: pointer;
+		}
+
+		.cart-side{
+			position: absolute;
+			top: 50px;
+			right: 0;
+			width: 320px;
+			background: #fff;
+			padding: 30px;
+			z-index: 3;
+			display: none;
+
+			.clos{
+				margin-bottom: 30px;
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				background: $main-color;
+				position: absolute;
+				top: -50px;
+				right: 0;
+			}
+
+			.titl{
+				padding-bottom: 15px;
+				margin-bottom: 15px;
+				border-bottom: 1px dashed $main-color;
+				display: flex;
+
+				h6{
+					font-family: 'Cormorant', serif;
+				}
+
+				span{
+					color: #888;
+					font-size: 13px;
+					margin-left: auto;
+				}
+			}
+
+			.prods{
+				max-height: 260px;
+				overflow: auto;
+			}
+
+			.item{
+				display: flex;
+				padding: 15px 0;
+
+				&:last-of-type{
+					border-bottom: 1px solid $main-color;
+				}
+
+				.img{
+					width: 70px;
+				}
+
+				.cont{
+					padding-left: 20px;
+
+					h6{
+						font-size: 14px;
+						margin-bottom: 5px;
+					}
+
+					.price{
+						color: #777;
+						font-size: 13px;
+						
+						span{
+							font-size: 15px;
+							color: $main-color;
+							font-family: 'Cormorant', serif;
+							margin-left: 5px;
+						}
+					}
+				}
+
+				.count{
+					padding-left: 20px;
+				}
+
+				.del{
+					margin-left: auto;
+
+					span{
+						width: 30px;
+						height: 30px;
+						line-height: 30px;
+						text-align: center;
+						font-size: 20px;
+						border: 1px solid #eee;
+						border-radius: 50%;
+					}
+				}
+			}
+
+			.total{
+				display: flex;
+				font-family: 'Cormorant', serif;
+				margin-top: 15px;
+
+				p{
+					margin-left: auto;
+				}
+			}
+
+			.btn-skew{
+				width: 100%;
+				text-align: center;
+				margin-top: 15px;
+			}
+		}
+	}
+    
+    .search{
+        padding: 20px 15px;
+        
+        .icon{
+			font-size: 16px;
+            cursor: pointer;
+        }
+
+        .search-form{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+			background: rgba(0,0,0,.9);
+			z-index: 3;
+            display: none;
+            
+            form{
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 50%;
+				transform: translateY(-50%);
+				padding: 0 30px;
+
+                input{
+					padding: 15px 0;
+					width: 100%;
+					max-width: 600px;
+                    font-size: 40px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    text-align: left;
+                    background: transparent;
+                    border: 0;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+
+            .close{
+                position: absolute;
+                top: 10%;
+                right: 10%;
+                color: #fff;
+                font-size: 40px;
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .logo{
+        width: 80px;
+	}
+	
+	.icon-bar{
+		font-size: 13px;
+	}
+}
+
+.nav-scroll{
+    background: #18181d;
+    border-color: #161718;
+	padding: 0;
+	position: fixed;
+	top: -80px;
+	transition: transform .5s;
+	transform: translateY(80px);
+}
+
+/* ====================== [ End navbar ] ====================== */
