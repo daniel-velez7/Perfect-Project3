@@ -15,9 +15,9 @@ class Home extends CI_Controller
 
         $data['title'] = ucfirst($page);
 
+        $this->load->view('templates/header');
         $this->load->view('templates/navbar');
         $this->load->view('templates/slider');
-        $this->load->view('templates/header');
         $this->load->view('pages/' . $page, $data);
         $this->load->view('templates/footer');
     }
@@ -27,8 +27,8 @@ class Home extends CI_Controller
 
         $data['title'] = ucfirst($page);
 
-        $this->load->view('templates/navbar');
         $this->load->view('templates/header');
+        $this->load->view('templates/navbar');
         $this->load->view('pages/' . $page, $data);
         $this->load->view('templates/footer');
     }
@@ -38,8 +38,8 @@ class Home extends CI_Controller
 
         $data['title'] = ucfirst($page);
 
-        $this->load->view('templates/navbar');
         $this->load->view('templates/header');
+        $this->load->view('templates/navbar');
         $this->load->view('pages/' . $page, $data);
         $this->load->view('templates/footer');
     }
@@ -49,8 +49,8 @@ class Home extends CI_Controller
 
         $data['title'] = ucfirst($page);
 
-        $this->load->view('templates/navbar');
         $this->load->view('templates/header');
+        $this->load->view('templates/navbar');
         $this->load->view('pages/' . $page, $data);
         $this->load->view('templates/footer');
     }
@@ -60,8 +60,8 @@ class Home extends CI_Controller
 
         $data['title'] = ucfirst($page);
 
-        $this->load->view('templates/navbar');
         $this->load->view('templates/header');
+        $this->load->view('templates/navbar');
         $this->load->view('pages/' . $page, $data);
         $this->load->view('templates/footer');
     }
@@ -107,8 +107,8 @@ class Home extends CI_Controller
 
         $data['title'] = ucfirst($page);
 
-        $this->load->view('templates/navbar');
         $this->load->view('templates/header');
+        $this->load->view('templates/navbar');
         $this->load->view('pages/' . $page, $data);
         $this->load->view('templates/footer');
     }
