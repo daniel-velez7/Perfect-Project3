@@ -89,6 +89,8 @@ class Home extends CI_Controller
                 $id = $this->session->user['id'];
 
                 $this->User_model->delete($id);
+
+                session_destroy();
                 redirect('Login/authentification');
             }
         }
