@@ -69,22 +69,29 @@
                     <a class="nav-link" href="<?php echo site_url('shop'); ?>">SHOP</a>
                 </li>
 
-                <?php  if ( $this->session->connected == false) {
+                <?php if ($this->session->connected == false) {
                     echo ' <li class="nav-item dropdown"> 
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="'. site_url('about') .'" role="button" aria-haspopup="true" aria-expanded="false">MEMBRE</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="' . site_url('about') . '" role="button" aria-haspopup="true" aria-expanded="false">MEMBRE</a>
                     <div class="dropdown-menu"> 
-                        <a class="dropdown-item" href="'. site_url('about') .'">INSCRIPTION</a>
-                        <a class="dropdown-item" href="'. site_url('about') .'">CONNECTION</a>
+                        <a class="dropdown-item" href="' . site_url('about') . '">INSCRIPTION</a>
+                        <a class="dropdown-item" href="' . site_url('about') . '">CONNECTION</a>
                     </div>
                 </li> ';
                 }
 
                 ?>
 
+                <?php if ($this->session->connected == true) {
+                    echo ' <li class="nav-item dropdown"> 
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="' . site_url('about') . '" role="button" aria-haspopup="true" aria-expanded="false">MEMBRE</a>
+                    <div class="dropdown-menu"> 
+                        <a class="dropdown-item" href="' . site_url('about') . '">PROFIL</a>
+                        <a class="dropdown-item" href="' . site_url('about') . '">DECONNECTION</a>
+                    </div>
+                </li> ';
+                }
 
-                
-               
-
+                ?>
             </ul>
             <div class="cart">
                 <div class="cart-icon">
