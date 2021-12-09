@@ -168,7 +168,7 @@ class User_model extends CI_Model {
         $this->db->select('*');
         $this->db->from($this->table_name);
         $query = $this->db->get();
-        return $query->result();
+        return $query->row();
     }
 
     public function GetList()
