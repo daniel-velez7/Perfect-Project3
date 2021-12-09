@@ -1,10 +1,9 @@
-
-
-<form action="" method='post'>
+<div class="container d-flex justify-content-center">
+<form class="d-flex flex-column w-25 p-3" action="" method='post'>
     <label for="firstname">Prenom</label>
     <input type="text" id="firstname" name="firstname" value="<?= $user['firstname'] ?>"><br>
     <label for="lastname">Nom</label>
-    <input type="text" id="lastname" name="lastname"value="<?= $user['lastname'] ?>"> <br>
+    <input type="text" id="lastname" name="lastname" value="<?= $user['lastname'] ?>"> <br>
     <label for="email">Email</label>
     <input type="email" id="email" name="email" value="<?= $user['email'] ?>"> <br>
     <label for="password">mot de passe</label>
@@ -19,7 +18,13 @@
     <input type="text" id="city" name="city" value="<?= $user['city'] ?>"> <br>
     <label for="code_postal">Code Postal</label>
     <input type="text" id="code_postal" name="code_postal" value="<?= $user['code_postal'] ?>"><br>
-    <button type="submit" name='update'>Modifier</button>
-    <button type="submit" name='delete'>Supprimer</button>
+    <button class="btn-skew btn-color btn-bg" type="submit" name='update'>
+    <span>Modifier</span>
+    <i></i>
+    </button>
+    <button  class="btn-skew btn-color btn-bg" type="submit" name='delete'>
+    <span>Supprimer</span>
+    <i></i>
+    </button>
 </form>
-
+</div>
