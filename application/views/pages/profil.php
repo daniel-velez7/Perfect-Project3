@@ -1,5 +1,5 @@
 <div class="container d-flex justify-content-center">
-<form class="d-flex flex-column w-25 p-3" action="" method='post'>
+<form class="d-flex flex-column w-50 p-3" action="" method='post'>
     <label for="firstname">Prenom</label>
     <input type="text" id="firstname" name="firstname" value="<?= $user['firstname'] ?>"><br>
     <label for="lastname">Nom</label>
