@@ -34,7 +34,7 @@
     <div class="container">
 
         <!-- Logo -->
-        <a class="logo" href="<?php echo site_url('home'); ?>">
+        <a class="logo" href="<?php echo site_url('index.php/Home'); ?>">
             <img src="<?= base_url('assets/img/logo-light.png'); ?>" alt="logo">
         </a>
 
@@ -48,33 +48,33 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="<?php echo site_url('about'); ?>" role="button" aria-haspopup="true" aria-expanded="false">QUI JE SUIS</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="<?php echo site_url('about'); ?>">PRODUCTIV’ELLES</a>
-                        <a class="dropdown-item" href="<?php echo site_url('about'); ?>">MOTIVATION</a>
+                        <a class="dropdown-item" href="<?php echo site_url('index.php/Home/about'); ?>">PRODUCTIV’ELLES</a>
+                        <a class="dropdown-item" href="<?php echo site_url('index.php/Home/about'); ?>">MOTIVATION</a>
                     </div>
                 </li>
                 <!-- <li class="nav-item">
                         <a class="nav-link" href="<?php echo site_url('about'); ?>">QUI JE SUIS</a>
                     </li> -->
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo site_url('formation'); ?>">FORMATION</a>
+                    <a class="nav-link" href="<?php echo site_url('index.php/Home/formation'); ?>">FORMATION</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo site_url('academy'); ?>">FI ACADEMY</a>
+                    <a class="nav-link" href="<?php echo site_url('index.php/Home/academy'); ?>">FI ACADEMY</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo site_url('blog'); ?>">BLOG</a>
+                    <a class="nav-link" href="<?php echo site_url('index.php/Home/blog'); ?>">BLOG</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo site_url('shop'); ?>">SHOP</a>
+                    <a class="nav-link" href="<?php echo site_url('index.php/Home/shop'); ?>">SHOP</a>
                 </li>
 
                 <?php if ($this->session->connected == false) {
                     echo ' <li class="nav-item dropdown"> 
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="' . site_url('about') . '" role="button" aria-haspopup="true" aria-expanded="false">MEMBRE</a>
                     <div class="dropdown-menu"> 
-                        <a class="dropdown-item" href="' . site_url('about') . '">INSCRIPTION</a>
-                        <a class="dropdown-item" href="' . site_url('about') . '">CONNECTION</a>
+                        <a class="dropdown-item" href="' . site_url('index.php/Subscribe/register') . '">INSCRIPTION</a>
+                        <a class="dropdown-item" href="' . site_url('index.php/Login/authentification') . '">CONNECTION</a>
                     </div>
                 </li> ';
                 }
