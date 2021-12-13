@@ -79,14 +79,14 @@
                 </li> ';
                 }
 
-                ?>
+                ?> 
 
                 <?php if ($this->session->connected == true) {
                     echo ' <li class="nav-item dropdown"> 
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="' . site_url('about') . '" role="button" aria-haspopup="true" aria-expanded="false">MEMBRE</a>
                     <div class="dropdown-menu"> 
-                        <a class="dropdown-item" href="' . site_url('about') . '">PROFIL</a>
-                        <a class="dropdown-item" href="' . site_url('about') . '">DECONNECTION</a>
+                        <a class="dropdown-item" href="' . site_url('index.php/Home/profil') . '">PROFIL</a>
+                        <a class="dropdown-item" href="' . site_url('index.php/Login/logout') . '">DECONNECTION</a>
                     </div>
                 </li> ';
                 }
